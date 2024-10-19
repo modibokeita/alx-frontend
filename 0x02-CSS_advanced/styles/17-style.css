@@ -390,7 +390,12 @@
     --section-tagline-transform: uppercase;
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
-    
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
 }
 
 html {
@@ -430,8 +435,15 @@ a[href]:active {
 /* Targeting section-header class */
 .section-header {
     text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
 }
-
+.section-body {
+    padding: var(--section-body-padding);
+}
+.section-footer {
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
+}
 /* Targeting section-title class */
 .section-title {
     font-family: var(--font-family-title); /* Setting the font family */
@@ -447,6 +459,10 @@ a[href]:active {
     text-transform: var(--section-tagline-transform); /* Transforming text to uppercase */
     font-weight: var(--font-weight-bold); /* Setting font weight to bold */
 }
+.section {
+    padding: var(--section-padding);
+}
+
 .container {
     width: 960px;
     margin-left: auto;
@@ -459,4 +475,7 @@ a[href]:active {
 
 .card-category {
     color: var(--color-primary);
+}
+.footer {
+    padding: var(--footer-padding);
 }
