@@ -36,6 +36,7 @@ body {
     font-size: var(--font-size-medium); /* Setting body font size to font-size-medium */
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-base);
+}
 
 /* Targeting all section headings (h1-h6) for font-family-title */
 h1, h2, h3, h4, h5, h6 {
